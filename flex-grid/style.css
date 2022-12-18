@@ -90,7 +90,7 @@ button {
 }
 
 .container {
-  width: 120rem;
+  max-width: 150rem;
   margin-inline: auto;
 }
 
@@ -158,4 +158,35 @@ img {
 
 .hero__decoration {
   flex: 1;
+}
+
+.shop__container {
+  padding-block-start: 7.4rem;
+}
+
+.shop_cards {
+  display: grid;
+  /* grid-template-columns: 20rem 10% 1fr 4fr; */
+  /* grid-template-columns: repeat(5, 20rem); */
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  /* grid-template-rows: vh; */
+  /* gap: 2rem 10rem; */
+  row-gap: 2rem;
+  column-gap: 4rem;
+
+  justify-items: center;
+  justify-content: center;
+}
+
+.shop_card {
+  inline-size: 20rem;
+  aspect-ratio: 3 / 4;
+  background-color: var(--color-primary-lightest);
+}
+
+.shop_card-1 {
+  /* align-self: ; */
+  /* justify-self: ; */
+  /* grid-column: 4 / 6; */
+  /* grid-row: 2 / 4; */
 }
