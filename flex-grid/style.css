@@ -1,0 +1,161 @@
+:root {
+  --color-gray-100: hsl(0deg 0% 100%);
+  --color-gray-95: hsl(0deg 0% 95%);
+  --color-gray-90: hsl(0deg 0% 90%);
+  --color-gray-85: hsl(0deg 0% 85%);
+  --color-gray-80: hsl(0deg 0% 80%);
+  --color-gray-70: hsl(0deg 0% 70%);
+  --color-gray-60: hsl(0deg 0% 60%);
+  --color-gray-50: hsl(0deg 0% 50%);
+  --color-gray-40: hsl(0deg 0% 40%);
+  --color-gray-35: hsl(0deg 0% 35%);
+  --color-gray-30: hsl(0deg 0% 30%);
+  --color-gray-20: hsl(0deg 0% 20%);
+  --color-gray-15: hsl(0deg 0% 15%);
+  --color-gray-10: hsl(0deg 0% 10%);
+
+  --color-bg: var(--color-gray-95);
+  --color-bg-dark: var(--color-gray-90);
+
+  --color-text: var(--color-gray-30);
+  --color-text-light: var(--color-gray-50);
+  --color-text-lighter: var(--color-gray-60);
+
+  --color-primary-darkest: hsl(228, 100%, 43%);
+  --color-primary-darker: hsl(228, 100%, 53%);
+  --color-primary-dark: hsl(228, 100%, 58%);
+  --color-primary: hsl(228, 100%, 63%);
+  --color-primary-light: hsl(228, 100%, 68%);
+  --color-primary-lighter: hsl(228, 100%, 73%);
+  --color-primary-lightest: hsl(228, 100%, 83%);
+
+  --color-secondary-darker: hsl(30, 100%, 53%);
+  --color-secondary-dark: hsl(30, 100%, 58%);
+  --color-secondary: hsl(30, 100%, 63%);
+  --color-secondary-light: hsl(30, 100%, 68%);
+  --color-secondary-lighter: hsl(30, 100%, 73%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.6rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin: 0;
+
+  font-family: inherit;
+  font-size: 2rem;
+  color: var(--color-text);
+  font-weight: 700;
+
+  padding: 0.8rem 1.2rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-gray-95);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.container {
+  width: 120rem;
+  margin-inline: auto;
+}
+
+header {
+  background-color: var(--color-primary-darker);
+  height: 6rem;
+
+  display: flex;
+  justify-content: center;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-gray-95);
+}
+
+.header__container ul {
+  display: flex;
+  gap: 1.2rem;
+  list-style: none;
+}
+
+li {
+  font-size: 2rem;
+}
+
+.logo {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero__container {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+img {
+  width: 100%;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+  flex: 1;
+}
+
+.hero__content-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.hero__content-cta {
+  display: flex;
+}
+
+.hero__content-cta button {
+  justify-self: stretch;
+  flex-basis: 100%;
+}
+
+.hero__decoration {
+  flex: 1;
+}
