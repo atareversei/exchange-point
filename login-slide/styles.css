@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+main {
+  height: 100vh;
+  position: relative;
+  overflow-y: hidden;
+}
+
+.content {
+  background-color: red;
+}
+
+.slide {
+  position: absolute;
+  height: 100vh;
+  inset: 0;
+  transform: translateY(100%);
+  transition: transform 300ms ease-in-out;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.show {
+  transform: translateY(0);
+}
+
+.overlay {
+  flex: 1;
+
+  display: grid;
+  place-items: center;
+}
+
+.login {
+  background-color: aqua;
+  flex: 4;
+}
